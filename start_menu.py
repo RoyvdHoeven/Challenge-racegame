@@ -23,7 +23,7 @@ def save_players(players):
 def start_screen():
     print("╔═══════════════════════════════════════════════════════════════════════════════╗")
     print("║                                                                               ║")
-    print("║                        WELCOME TO ⚡ [PLACEHOLDER] ⚡                           ║")
+    print("║                        WELCOME TO ⚡ [Terminal Racer] ⚡                        ║")
     print("║                                                                               ║")
     print("╚═══════════════════════════════════════════════════════════════════════════════╝")
     time.sleep(1)
