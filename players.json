@@ -1,18 +1,3 @@
 {
-    "1124464": {
-        "car_model": "Sport",
-        "car_color": "Red"
-    },
-    "Player01": {
-        "car_model": "SUV",
-        "car_color": "Blue"
-    },
-    "Player200": {
-        "car_model": "Classic",
-        "car_color": "Yellow"
-    },
-    "Player05": {
-        "car_model": "Standard",
-        "car_color": "Silver"
-    }
+
 }

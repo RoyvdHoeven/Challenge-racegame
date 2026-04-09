@@ -2,6 +2,7 @@ import json
 import os
 import time
 
+from start_screen import welcome_message
 from race_logic import start_race
 
 GAME_FILE = "players.json"
@@ -18,16 +19,6 @@ def load_players():
 def save_players(players):
     with open(GAME_FILE, "w") as file:
         json.dump(players, file, indent=4)
-
-
-def start_screen():
-    print("╔═══════════════════════════════════════════════════════════════════════════════╗")
-    print("║                                                                               ║")
-    print("║                        WELCOME TO ⚡ [PLACEHOLDER] ⚡                           ║")
-    print("║                                                                               ║")
-    print("╚═══════════════════════════════════════════════════════════════════════════════╝")
-    time.sleep(1)
-
 
 def create_player(players):
     print("\n\n=== Create new player ===")
@@ -91,7 +82,7 @@ def main_menu():
     players = load_players()
 
     while True:
-        print("\n\n=== STARTMENU ===")
+        print("\n\n=== START MENU ===")
         print("1. Create a new player")
         print("2. Car customizer")
         print("3. Play")
@@ -114,6 +105,6 @@ def main_menu():
             print("\n\nInvalid Choice, try again...")
             time.sleep(2)
 
-
-start_screen()
+#for welcome_message parameter, always use the reference to the ascii_art.html file: ascii_art.html
+welcome_message("ascii_art.html")
 main_menu()
